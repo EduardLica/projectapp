@@ -1,0 +1,21 @@
+.footnote-container {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    margin-top: 3%;
+    background-color: #fbf3d5 !important;
+    color: #a9b65e !important;
+   }
+  
+  .footnote-img {
+    width: auto; 
+    height: 15px; 
+    margin-left: 10px; 
+    margin-right: 30px; 
+  }
+  .social-icons {
+      display: flex;
+      align-items: center;
+    }
+
+    

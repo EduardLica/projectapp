@@ -1,0 +1,37 @@
+.containerdespre {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1px;
+  margin: 10%;
+  border: 3px solid #faedcd;
+  border-radius: 6%;
+}
+
+.textdespre {
+  flex: 1;
+  padding: 20px;
+  color: #a9b65e;
+  margin-right: 8%;
+  padding: 1.5%;
+}
+
+.imagedespre {
+  flex: 1;
+  text-align: right;
+  margin-right: 4%;
+  padding: 1.5%;
+  radius: 6%;
+}
+
+.backgroundcontainer {
+  background-color: #fffdf8 !important ;
+}
+
+@media (max-width: 815px) {
+  .containerdespre {
+    flex-direction: column;
+    margin: 10px;
+  }
+}

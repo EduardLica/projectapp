@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import TopNav from "./Containers/TopNav";
+import HomePage from "./pages/HomePage";
+import ProductList from "./pages/ProductList";
+import AboutUs from "./pages/AboutUs";
+import Footnote from "./Containers/Footnote";
+import Contact from "./pages/Contact";
+import FavoriteProductsPage from "./pages/FavoriteProductsPage";
 
 function App() {
+  const [favoriteProducts] = useState([]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <TopNav />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/produse" element={<ProductList />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route
+            path="/produse-favorite"
+            element={
+              <FavoriteProductsPage favoriteProducts={favoriteProducts} />
+            }
+          />
+        </Routes>
+        <Footnote />
+      </div>
+    </BrowserRouter>
   );
 }
 

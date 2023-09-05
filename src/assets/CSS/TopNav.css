@@ -1,0 +1,28 @@
+.text-secondary {
+  text-decoration: none !important;
+  font-weight: bold !important;
+  font-size: 23px !important;
+  font-family: sans-serif !important;
+  color: #a9b65e !important;
+}
+
+.text-secondary:hover {
+  color: #e9edc9 !important ;
+}
+
+.nav-links {
+  text-decoration: none !important;
+  font-weight: bold !important;
+  color: #a9b65e !important;
+  margin-right: 35px !important;
+}
+
+.nav-links:hover {
+  color: #e9edc9 !important ;
+}
+
+.logo-image {
+  max-width: 100px !important;
+  height: 37px;
+  margin-right: 10px;
+}
